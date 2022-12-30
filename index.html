@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Головна</title>
+        <meta name="description" content="Пекарня">
+        <link rel="stylesheet" href="main.css">
+    </head>
+        <div class="div" style="display: flex;">
+<div style="flex-grow: 1;">
+Welcome!
+</div>
+<div style="flex-grow: 1;">
+Welcome!
+</div>
+<div style="flex-grow: 1;">
+Welcome!
+</div>
+<div style="flex-grow: 1;">
+Welcome!
+</div>
+<div style="flex-grow: 1;">
+Welcome!
+</div>            
+</div>
+    <body>
+        <p class="center">
+        <img style="position: relative;width: 300px; height: 150px; " src="C:\Users\olehp\Pictures\Uplay\1.jpg" alt="">
+        </p>
+		<h1 style="position: 
+        relative; text-align: center;">Визначні місця Вінниці"</h1>
+		<h2 style="position: relative; text-align: center;">Завітайте в одне з найкомфортніших міст України!</h2>  
+                <div style="display: flex;">
+<div style="flex-grow: 3;">
+<table border="1">
+            <nav>
+              <h1 style="position: relative; text-align: center;"> 
+                <button class="button button1"><a href="index.html">Головна</a></button>
+                <button class="button button2"><a href="menu.html">Меню</a></button><button class="button button3"><a href="about.html">Про нас</a></button>
+                <button class="button button4"><a href="galery.html">Галерея</a></button>
+                </h1>
+                </nav>
+</table>
+</div>
+</div>
+		<b>
+			<b>Наша адреса:</b> 
+            м. Вінниця
+            Хмельницьке шосе
+		</b>
+		<p>
+            Чому ви повинні приїхати саме сюди? Ось кілька аргументів:
+		</p>
+		<ol>
+			<li>Багато цікавих місць для тупистів.</li>
+            <li>Комфортні умови для проживання.</li>
+            <li>Хороші дороги.</li>
+            <li>Привітні люди.</li>
+		</ol>
+        <b style="position: relative; font-size: 25px; color: crimson">Акція від нашої команди на честь створення сайту!</b>
+        <p style="position: relative; font-size: 20px;">При кожному відвідуванні Вінниці натискайте на цю кнопку. За 5 відвідувань - абонемент у аквапарк "Маяк"!</p>
+        <h1>Відвідувань <output type="text" id="count" value="0">0</output></h1>
+        <script>
+                    function resetValue() {
+                        var value = parseInt(document.getElementById('count').value, 10);
+                        value = isNaN(value) ? 0 : value;
+                        value = 0;
+                        document.getElementById('count').value = value;
+                    }
+                </script>
+        <div style="position: absolute; width: 100%; height: 87%;">
+        <div style="flex-grow: 1; ">
+            <center>
+                <form><input style="width: 30vh; height: 12vh;" type="button" onclick="incrementValue()"
+                        value="Натисніть"></form>
+            </center>
+        <script>
+                function incrementValue()
+                 {
+                    var value = parseInt(document.getElementById('count').value, 10);
+                    value = isNaN(value) ? 0 : value;
+                    value++;
+                    document.getElementById('count').value = value;
+                 }
+            </script>
+        </div>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lA3ZB8GW7Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script>
+    alert("welcome to the Vinnytsia!");
+    console.log("hello");
+    function clock(){
+      var date = new Date(),
+             hours = (date.getHours() < 10) ? '0' + date.getHours() : date.getHours(),
+             minutes = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes(),
+             seconds = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
+      document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds;
+    }
+    setInterval(clock, 1000);
+    clock();
+         </script>
+            <footer>Зв'яжіться з нами:
+                +380957506025
+                oleh.pynzar@gmail.com</footer>
+    </body>
+</html>
